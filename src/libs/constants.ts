@@ -1,0 +1,1 @@
+export const BASIS_POINT_MAX = 10000;

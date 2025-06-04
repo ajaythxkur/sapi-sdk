@@ -1,0 +1,31 @@
+{
+  "name": "sapi-sdk",
+  "version": "0.0.1",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "homepage": "https://docs.sapi.ag",
+  "repository": {
+    "url": "https://github.com/ajaythxkur/sapi_ag_sdk"
+  },
+  "scripts": {
+    "build": "tsup"
+  },
+  "keywords": [
+    "sapi_sdk"
+  ],
+  "author": "ajaythxkur",
+  "license": "ISC",
+  "description": "Sapi_ag sdk",
+  "devDependencies": {
+    "@types/bn.js": "^5.1.6",
+    "@types/gaussian": "^1.2.2",
+    "tsup": "^8.5.0",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "bn.js": "^5.2.2",
+    "decimal.js": "^10.5.0",
+    "gaussian": "^1.3.0"
+  }
+}
