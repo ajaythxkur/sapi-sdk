@@ -25,6 +25,15 @@ export function getBinIdFromPrice(
     return (min ? binId.floor() : binId.ceil()).toNumber();
 }
 
+
+const price = 1;
+const binId = getBinIdFromPrice(
+  price,
+  50,
+  false
+);
+console.log(binId)
+
 export function getPriceOfBinByBinId(
     binId: number, 
     binStep: number
@@ -32,6 +41,9 @@ export function getPriceOfBinByBinId(
   const binStepNum = new Decimal(binStep).div(new Decimal(BASIS_POINT_MAX));
   return new Decimal(1).add(new Decimal(binStepNum)).pow(new Decimal(binId));
 } 
+
+let pricex = getPriceOfBinByBinId(binId, 50);
+console.log(pricex);
 
 export function getPriceFromOctas(
     tokenXDecimal: number,
